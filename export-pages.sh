@@ -17,7 +17,7 @@ do
     markdown_py -o html5 -e utf8 -f "$TEMP/$name.$OUT_EXT" "$file"
 done
 
-git checkout -b "$BRANCH"
+git checkout "$BRANCH"
 rm -rf *
 cp "$TEMP/*" ./
 git add --all
