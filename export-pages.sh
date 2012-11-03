@@ -2,7 +2,7 @@
 
 IN_EXT="md"
 OUT_EXT="html"
-TEMP="/tmp/export-pages/"
+TEMP="/tmp/export-pages"
 BRANCH="gh-pages"
 
 rm -rf "$TEMP"
@@ -19,7 +19,7 @@ done
 
 git checkout "$BRANCH"
 rm -rf *
-cp "$TEMP/*" ./
+cp "$TEMP"/* ./
 git add --all
 git commit -m "Automated page build by `whoami`"
 git push origin "$BRANCH"
