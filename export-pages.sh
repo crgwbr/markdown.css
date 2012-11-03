@@ -10,7 +10,7 @@ mkdir -p "$TEMP"
 
 git stash save "Building Pages"
 
-for file in ./"*.$IN_EXT"
+for file in ./*.$IN_EXT
 do
     name=`basename "$file" ".$IN_EXT"`
     echo "Exporting $name.$IN_EXT to $name.$OUT_EXT"
