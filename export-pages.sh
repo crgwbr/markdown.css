@@ -12,7 +12,7 @@ for file in ./*.$IN_EXT
 do
     name=`basename "$file" ".$IN_EXT"`
     echo "Exporting $name.$IN_EXT to $name.$OUT_EXT"
-    markdown_py -o html5 -e utf8 -f "$TEMP/$name.$OUT_EXT" "$file"
+    markdown_py -o html5 -e utf8 -f "$name.$OUT_EXT" "$file"
 done
 
 
