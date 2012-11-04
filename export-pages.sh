@@ -15,7 +15,7 @@ do
     
     markdown_py -o html5 -e utf8 -f "$name.$OUT_EXT" "$file" >> "$name.$OUT_EXT"
     
-    echo "<!DOCTYPE html><html><head><title>$name</title><link href='markdown.css' rel='stylesheet' type='text/css' /></head><body>" | cat - "$name.$OUT_EXT" > temp && mv temp "$name.$OUT_EXT"
+    echo "<!DOCTYPE html><html><head><title>$name</title><link href='markdown.css' rel='stylesheet' type='text/css' /><meta http-equiv='Content-Type' content='text/html; charset=utf-8'></head><body>" | cat - "$name.$OUT_EXT" > temp && mv temp "$name.$OUT_EXT"
     echo "</body></html>" >> "$name.$OUT_EXT"
 done
 

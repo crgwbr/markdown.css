@@ -1,6 +1,6 @@
 html {
     font-family: Georgia, "times new roman", times, serif;
-    font-size: 32px;
+    font-size: 24px;
     width: 75%;
     margin: auto;
     color: #222;
@@ -21,4 +21,19 @@ p {
 strong {
     font-family: "Futura-CondensedMedium", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-weight: normal;
+}
+
+blockquote {
+    margin-left: 3em;
+    position: relative;
+    font-size: 1.5em;
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 4em;
+    position: absolute;
+    color: #999;
+    left: -0.5em;
+    top: -0.3em;
 }
