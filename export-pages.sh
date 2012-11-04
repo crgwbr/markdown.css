@@ -13,9 +13,9 @@ do
     name=`basename "$file" ".$IN_EXT"`
     echo "Exporting $name.$IN_EXT to $name.$OUT_EXT"
     
-    rm "$name.$OUT_EXT"
-    echo "<!DOCTYPE html><html><head><title>$name</title><link href='markdown.css' rel='stylesheet' type='text/css' /></head><body>" >> "$name.$OUT_EXT"
-    markdown_py -o html5 -e utf8 "$file" >> "$name.$OUT_EXT"
+    markdown_py -o html5 -e utf8 -f "$name.$OUT_EXT" "$file" >> "$name.$OUT_EXT"
+    
+    echo "<!DOCTYPE html><html><head><title>$name</title><link href='markdown.css' rel='stylesheet' type='text/css' /></head><body>" | cat - "$name.$OUT_EXT" > temp && mv temp "$name.$OUT_EXT"
     echo "</body></html>" >> "$name.$OUT_EXT"
 done
 
