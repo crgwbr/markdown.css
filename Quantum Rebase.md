@@ -1,5 +1,3 @@
-<link href="markdown.css" rel="stylesheet" type="text/css" />
-
 # Quantum Rebase
 
 ## Book Jacket
