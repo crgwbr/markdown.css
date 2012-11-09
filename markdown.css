@@ -1,10 +1,10 @@
 html {
     font-family: Georgia, "times new roman", times, serif;
-    font-size: 24px;
-    width: 75%;
+    font-size: 16px;
+    width: 47.015%;
     margin: auto;
     color: #222;
-    line-height: 1.5;
+    line-height: 2.618em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,28 +12,44 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.05em;
     font-weight: bold;
     margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 4.236em;
+}
+
+h2 {
+	font-size: 2.618em;
+	margin: 1.618em 0 0.618em 0;
 }
 
 p {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1.618em 0;
 }
 
 strong {
-    font-family: "Futura-CondensedMedium", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: "Futura-Medium", "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-weight: normal;
+	line-height: 4.236em;
+	letter-spacing: 0.382em;
+	word-spacing: 0.382em;
+	font-size: 1.618em;
+	padding: 0 0 0 1em;
+	border-left: 5px solid #CCC;
 }
 
 blockquote {
-    margin-left: 3em;
+    margin-left: 4.236em;
     position: relative;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 blockquote::before {
     content: "“";
-    font-size: 6em;
+    font-size: 6.854em;
     position: absolute;
     color: #CCC;
-    left: -0.5em;
-    top: -0.3em;
+    left: -0.618em;
+    top: -0.382em;
 }
